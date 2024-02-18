@@ -1,0 +1,12 @@
+.appHeader {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .appHeader {
+      margin-top: 25px;
+    }
+  }

@@ -1,0 +1,92 @@
+.header {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.headerText {
+  display: inline-block;
+  margin: 0;
+}
+
+.info {
+  padding: 100px;
+  margin-bottom: 25px;
+  width: calc(100% - 200px);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.7px);
+  -webkit-backdrop-filter: blur(0.7px);
+  display: inline-block;
+  transition: transform ease-in-out 0.3s;
+}
+.info:last-child {
+  margin-bottom: 0;
+}
+.button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 12.5px 35px;
+  font-size: 1.4em;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 6px 30px 0px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  width: fit-content;
+  display: inline-block;
+}
+
+.buttonNoBackground {
+  background: none;
+  border: none;
+  margin: 12.5px 35px;
+  font-size: 1.4em;
+  cursor: pointer;
+  width: fit-content;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: var(--accent-dark);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 35px 0px;
+}
+
+.description {
+  font-size: 1.25em;
+}
+
+.accentText {
+  color: var(--accent);
+}
+@media only screen and (max-width: 900px) {
+  .info {
+    padding: 25px;
+    width: calc(100% - 50px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 1.75em;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .buttonNoBackground {
+    margin: 12.5px 0;
+  }
+  .button {
+    display: block;
+  }
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+.main {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  animation: bg-scrolling-reverse 0.92s infinite;
+  animation-timing-function: linear;
+}

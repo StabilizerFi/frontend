@@ -1,0 +1,60 @@
+:root {
+  --accent: rgb(75, 186, 255);
+  --accent-dark: rgb(70, 179, 247);
+  --background: rgb(255, 255, 255);
+  --text: rgb(50, 50, 50);
+  --text-light: rgb(100, 100, 100);
+  --border: 1px rgb(214, 214, 214) solid;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: white;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+main {
+  padding: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 25px;
+  }
+}
